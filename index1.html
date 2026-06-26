@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en-NZ" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MJ Group | New Zealand Property &amp; Investment Group</title>
+<meta name="description" content="MJ Group is a Kiwi-owned and operated New Zealand group investing across residential rentals, homes for sale, commercial property, asset services, healthcare, education and future-focused innovation.">
+<meta name="theme-color" content="#FFFFFF">
+<meta property="og:type" content="website">
+<meta property="og:title" content="MJ Group | New Zealand Property &amp; Investment Group">
+<meta property="og:description" content="Kiwi owned. Locally invested. Future focused.">
+<meta property="og:url" content="https://www.mjgroup.nz/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"MJ Group","url":"https://www.mjgroup.nz","description":"Kiwi-owned and operated New Zealand group investing across property, healthcare, education and innovation.","areaServed":"NZ","subOrganization":[{"@type":"Organization","name":"MJ Home","url":"https://www.mjhome.co.nz"},{"@type":"Organization","name":"MJ Living","url":"https://www.mjliving.co.nz"},{"@type":"Organization","name":"MJ Commercial","url":"https://www.mjcommercial.co.nz"},{"@type":"Organization","name":"MJ Asset","url":"https://www.mjasset.co.nz"},{"@type":"Organization","name":"MJ Healthcare"}]}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.pexels.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FFFFFF;--bg:#F4F8FD;--surface:#FFFFFF;--surface-2:#E9F1FB;
+    --ink:#0E2143;--ink-2:#22365A;--ink-soft:#506687;
+    --brand:#1E5BA8;--brand-2:#2E72C8;--brand-soft:#9CC2EE;
+    --gold:#9C7430;--gold-bright:#C9A65A;
+    --line:#DCE6F4;--line-2:#CBDAF0;
+    --nav-bg:rgba(255,255,255,.86);--scrim:255,255,255;
+    --panel-from:#16467F;--panel-to:#0E2D52;--panel-ink:#FFFFFF;--panel-ink-soft:#D6E4F6;--panel-ink-mute:#C9DCF4;--panel-acc:#9CC2EE;
+    --accent-from:#16467F;--accent-to:#1E5BA8;
+    --shadow-sm:0 1px 2px rgba(14,33,67,.04),0 4px 14px -8px rgba(14,33,67,.18);
+    --shadow-md:0 22px 54px -28px rgba(14,33,67,.30);
+    --i-sky1:#EAF3FC;--i-sky2:#CDE1F6;--i-far:#BBD2EE;--i-mid:#8FB1DC;--i-water:#B9D2EE;
+    --i-b1:#4E81BD;--i-b2:#3567A6;--i-b3:#244F8A;--i-roof:#15467F;--i-win:#F4C76C;--i-stroke:#15467F;
+    --display:"Fraunces",Georgia,serif;--body:"Inter",system-ui,-apple-system,sans-serif;--mono:"Space Mono",ui-monospace,monospace;
+    --maxw:1200px;--gutter:clamp(20px,5vw,68px);
+  }
+  html[data-theme="dark"]{
+    --paper:#0B1B38;--bg:#0A1730;--surface:#0E2143;--surface-2:#16315E;
+    --ink:#EAF1FB;--ink-2:#C9DCF4;--ink-soft:#9FB6D6;
+    --brand:#4F97E8;--brand-2:#6BAAEE;--brand-soft:#3B6BA8;
+    --gold:#D9B968;--gold-bright:#E6CE8C;
+    --line:rgba(159,182,214,.16);--line-2:rgba(159,182,214,.30);
+    --nav-bg:rgba(10,23,48,.82);--scrim:10,23,48;
+    --panel-from:#0E2547;--panel-to:#0A1B38;--panel-ink:#EAF1FB;--panel-ink-soft:#C9DCF4;--panel-ink-mute:#9FB6D6;--panel-acc:#6BAAEE;
+    --accent-from:#16315E;--accent-to:#1E5BA8;
+    --shadow-sm:0 1px 2px rgba(0,0,0,.3),0 6px 20px -10px rgba(0,0,0,.55);
+    --shadow-md:0 26px 60px -26px rgba(0,0,0,.7);
+    --i-sky1:#0B1E40;--i-sky2:#102A55;--i-far:#16315E;--i-mid:#1E437A;--i-water:#0C2247;
+    --i-b1:#1E4378;--i-b2:#173763;--i-b3:#102a51;--i-roof:#5BA0F0;--i-win:#E6CE8C;--i-stroke:#6BAAEE;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  body{font-family:var(--body);color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;transition:background-color .45s,color .45s}
+  a{color:inherit;text-decoration:none}
+  ::selection{background:var(--brand-2);color:#fff}
+  body,.card,.feature,.route,.stat,.pillar,header.nav,.lang-btn,.theme-btn{transition:background-color .45s ease,color .45s ease,border-color .45s ease,box-shadow .3s ease}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding-inline:var(--gutter)}
+  .eyebrow{font-family:var(--mono);font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--brand);display:flex;align-items:center;gap:.7em}
+  .eyebrow::before{content:"";width:26px;height:1px;background:var(--brand-2);opacity:.85}
+  .eyebrow.gold{color:var(--gold)}.eyebrow.gold::before{background:var(--gold)}
+  h1,h2,h3{font-family:var(--display);font-weight:500;line-height:1.05;letter-spacing:-.015em;color:var(--ink)}
+  .section{padding-block:clamp(70px,10vw,128px);position:relative}
+  .section-head{max-width:780px;margin-bottom:clamp(36px,6vw,60px)}
+  .section-head h2{font-size:clamp(2rem,5vw,3.4rem);margin-top:.55em}
+  .section-head p{margin-top:1.05em;color:var(--ink-soft);font-size:1.06rem;max-width:62ch}
+  .btn{font-family:var(--body);font-weight:500;font-size:.92rem;padding:.85em 1.45em;border-radius:3px;border:1px solid transparent;display:inline-flex;align-items:center;gap:.6em;cursor:pointer;transition:transform .25s,background .25s,border-color .25s,color .25s,box-shadow .25s;white-space:nowrap}
+  .btn:focus-visible{outline:2px solid var(--brand-2);outline-offset:3px}
+  .btn-primary{background:var(--brand);color:#fff;box-shadow:0 10px 26px -12px rgba(30,91,168,.6)}
+  .btn-primary:hover{background:var(--brand-2);transform:translateY(-2px)}
+  .btn-ghost{background:rgba(255,255,255,.14);color:#fff;border-color:rgba(255,255,255,.5);backdrop-filter:blur(4px)}
+  .btn-ghost:hover{background:rgba(255,255,255,.24);border-color:#fff;transform:translateY(-2px)}
+  .btn .arr{transition:transform .25s}.btn:hover .arr{transform:translateX(3px)}
+
+  /* NAV */
+  header.nav{position:fixed;top:0;left:0;right:0;z-index:60;border-bottom:1px solid transparent}
+  header.nav.scrolled{background:var(--nav-bg);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);box-shadow:0 4px 24px -18px rgba(14,33,67,.5)}
+  .nav-inner{max-width:var(--maxw);margin:0 auto;padding:14px var(--gutter);display:flex;align-items:center;justify-content:space-between;gap:18px}
+  .brand{display:flex;align-items:center;gap:12px}
+  .brand .mark{width:36px;height:36px;border:1.6px solid var(--brand);display:grid;place-items:center;border-radius:4px;position:relative;font-family:var(--display);font-size:.95rem;font-weight:600;color:var(--brand);background:linear-gradient(135deg,var(--surface),var(--surface-2))}
+  .brand .mark::after{content:"";position:absolute;inset:4px;border:1px solid var(--line-2);border-radius:2px}
+  .brand .name{font-family:var(--display);font-size:1.2rem;font-weight:600;color:var(--ink)}.brand .name b{color:var(--brand)}
+  .nav-right{display:flex;align-items:center;gap:22px}
+  .nav-links{display:flex;align-items:center;gap:26px}
+  .nav-links a{font-size:.9rem;color:var(--ink-2);transition:color .2s;position:relative}
+  .nav-links a:hover{color:var(--brand)}
+  .nav-links a::after{content:"";position:absolute;left:0;bottom:-6px;height:1px;width:0;background:var(--brand-2);transition:width .25s}
+  .nav-links a:hover::after{width:100%}
+  .nav-tools{display:flex;align-items:center;gap:10px}
+  .theme-btn{width:38px;height:38px;border-radius:99px;border:1px solid var(--line-2);background:var(--surface);color:var(--ink-2);cursor:pointer;display:grid;place-items:center;transition:border-color .2s,color .2s,transform .2s}
+  .theme-btn:hover{border-color:var(--brand-2);color:var(--brand);transform:translateY(-1px)}
+  .theme-btn svg{width:17px;height:17px}.theme-btn .ico-moon{display:none}
+  html[data-theme="dark"] .theme-btn .ico-sun{display:none}html[data-theme="dark"] .theme-btn .ico-moon{display:block}
+  .lang{position:relative}
+  .lang-btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:.78rem;letter-spacing:.06em;color:var(--ink-2);background:var(--surface);border:1px solid var(--line-2);border-radius:99px;padding:8px 13px;cursor:pointer;transition:border-color .2s,color .2s}
+  .lang-btn:hover{border-color:var(--brand-2);color:var(--brand)}.lang-btn svg{width:15px;height:15px}
+  .lang-btn .chev{transition:transform .25s}.lang.open .lang-btn .chev{transform:rotate(180deg)}
+  .lang-panel{position:absolute;top:calc(100% + 10px);right:0;width:300px;max-height:62vh;overflow:auto;background:var(--surface);border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow-md);padding:8px;opacity:0;visibility:hidden;transform:translateY(-8px);transition:.22s;z-index:80}
+  .lang.open .lang-panel{opacity:1;visibility:visible;transform:none}
+  .lang-panel .lp-head{font-family:var(--mono);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);padding:8px 12px 6px}
+  .lang-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px}
+  .lang-opt{display:flex;flex-direction:column;text-align:left;background:none;border:none;cursor:pointer;padding:9px 11px;border-radius:7px;transition:background .15s}
+  .lang-opt:hover,.lang-opt.active{background:var(--surface-2)}
+  .lang-opt .nm{font-size:.92rem;color:var(--ink);font-weight:500}.lang-opt .en{font-size:.7rem;color:var(--ink-soft);margin-top:2px}
+  .lang-note{font-size:.72rem;color:var(--ink-soft);padding:10px 12px 6px;border-top:1px solid var(--line);margin-top:6px;line-height:1.5}
+  .nav-toggle{display:none;background:var(--surface);border:1px solid var(--line-2);border-radius:4px;width:42px;height:38px;cursor:pointer;color:var(--ink);font-size:1.1rem}
+  @media (max-width:1040px){.nav-links{position:fixed;inset:60px 0 auto 0;flex-direction:column;align-items:flex-start;gap:0;background:var(--nav-bg);backdrop-filter:blur(14px);padding:8px var(--gutter) 24px;border-bottom:1px solid var(--line);transform:translateY(-135%);transition:transform .35s;box-shadow:var(--shadow-md)}.nav-links.open{transform:translateY(0)}.nav-links a{padding:15px 0;width:100%;border-bottom:1px solid var(--line)}.nav-links a::after{display:none}.nav-toggle{display:block}.lang-btn .lbl{display:none}.nav-cta-desktop{display:none}}
+
+  .illu .far{fill:var(--i-far)}.illu .mid{fill:var(--i-mid)}.illu .water{fill:var(--i-water)}
+  .illu .b1{fill:var(--i-b1)}.illu .b2{fill:var(--i-b2)}.illu .b3{fill:var(--i-b3)}
+  .illu .roof{fill:var(--i-roof)}.illu .win{fill:var(--i-win)}.illu .stroke{stroke:var(--i-stroke)}
+  .illu .sky-t{stop-color:var(--i-sky1)}.illu .sky-b{stop-color:var(--i-sky2)}
+
+  /* HERO */
+  .hero{position:relative;min-height:100svh;display:flex;align-items:center;overflow:hidden;background:var(--i-sky1)}
+  .hero-illu{position:absolute;inset:0;width:100%;height:100%;z-index:0}
+  .hero-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
+  .hero-scrim{position:absolute;inset:0;z-index:2;pointer-events:none;background:linear-gradient(100deg,rgba(8,20,42,.86) 0%,rgba(8,20,42,.6) 38%,rgba(8,20,42,.25) 66%,rgba(8,20,42,.05) 86%)}
+  @media (max-width:760px){.hero-scrim{background:linear-gradient(180deg,rgba(8,20,42,.82),rgba(8,20,42,.55) 45%,rgba(8,20,42,.25) 85%)}}
+  .hero-inner{position:relative;z-index:3;width:100%;padding-top:96px;padding-bottom:64px;color:#fff}
+  .hero-eyebrow{margin-bottom:22px;color:#A9CBF0}.hero-eyebrow::before{background:#A9CBF0}
+  .hero h1{font-size:clamp(2.7rem,7vw,5.4rem);font-weight:500;max-width:15ch;color:#fff}
+  .hero h1 .em{font-style:italic;color:#9CC2EE}
+  .hero p.lede{margin-top:1.3em;max-width:50ch;font-size:clamp(1.02rem,1.5vw,1.2rem);color:#E4EEFA}
+  .hero-tags{margin-top:2em;display:flex;flex-wrap:wrap;align-items:center;font-family:var(--mono);font-size:.78rem;letter-spacing:.06em;color:#DCE9F8}
+  .hero-tags span{padding-inline:16px;border-left:1px solid rgba(255,255,255,.3)}.hero-tags span:first-child{padding-left:0;border-left:none}
+  .hero-cta{margin-top:2.2em;display:flex;flex-wrap:wrap;gap:14px}
+  .scroll-cue{position:absolute;left:var(--gutter);bottom:24px;z-index:3;font-family:var(--mono);font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:#C9DCF4;display:flex;align-items:center;gap:10px}
+  .scroll-cue .bar{width:1px;height:30px;background:linear-gradient(#9CC2EE,transparent);animation:cue 2.4s ease-in-out infinite}
+  @keyframes cue{0%,100%{transform:scaleY(.4);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}}
+
+  /* GROUP + framed photo */
+  .purpose{background:var(--bg)}
+  .purpose-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(34px,6vw,72px);align-items:center}
+  .purpose-copy h2{font-size:clamp(2rem,5vw,3.2rem);margin:.5em 0 .6em}
+  .purpose-copy p{color:var(--ink-soft);margin-bottom:1em;font-size:1.04rem}
+  .photo-panel{position:relative;border-radius:12px;overflow:hidden;aspect-ratio:5/4;box-shadow:var(--shadow-md);background:linear-gradient(160deg,var(--i-sky1),var(--surface-2));border:1px solid var(--line-2)}
+  .photo-panel img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .photo-cap{position:absolute;left:16px;bottom:14px;z-index:2;font-family:var(--mono);font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;color:#fff;background:rgba(8,20,42,.5);padding:6px 11px;border-radius:99px;backdrop-filter:blur(4px);display:flex;align-items:center;gap:8px}
+  .photo-cap .pin{width:6px;height:6px;border-radius:50%;background:var(--gold-bright)}
+  .stats-row{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line-2);margin-top:clamp(40px,6vw,64px)}
+  .stat{padding:26px 24px 8px;border-right:1px solid var(--line-2)}
+  .stats-row .stat:last-child{border-right:none}
+  .stat .n{font-family:var(--display);font-size:clamp(2rem,3.6vw,2.8rem);color:var(--brand);font-weight:600;display:block}
+  .stat .n.gold{color:var(--gold)}.stat .l{color:var(--ink-soft);font-size:.95rem;margin-top:6px;display:block}
+  @media (max-width:860px){.purpose-grid{grid-template-columns:1fr}.stats-row{grid-template-columns:1fr;border-top:none}.stat{border-right:none;border-top:1px solid var(--line-2)}}
+
+  /* COMPANIES */
+  .companies{background:linear-gradient(180deg,var(--bg),var(--surface))}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  @media (max-width:980px){.cards{grid-template-columns:repeat(2,1fr)}}
+  @media (max-width:600px){.cards{grid-template-columns:1fr}}
+  .card{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:10px;display:flex;flex-direction:column;overflow:hidden;box-shadow:var(--shadow-sm);transition:transform .3s,box-shadow .3s,border-color .3s}
+  .card:hover{box-shadow:var(--shadow-md);border-color:var(--line-2);transform:translateY(-4px)}
+  .c-illu{position:relative;aspect-ratio:16/10;width:100%;overflow:hidden;border-bottom:1px solid var(--line);background:linear-gradient(160deg,var(--i-sky1),var(--surface-2))}
+  .c-illu svg{position:absolute;inset:0;width:100%;height:100%;z-index:0}
+  .c-illu img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;transition:transform .5s ease}
+  .card:hover .c-illu img{transform:scale(1.05)}
+  .c-illu .tagchip{position:absolute;top:12px;left:12px;z-index:2;font-family:var(--mono);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:#fff;background:rgba(8,20,42,.55);backdrop-filter:blur(3px);padding:5px 9px;border-radius:99px}
+  .c-body{padding:22px 26px 26px;display:flex;flex-direction:column;flex:1}
+  .c-top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px}
+  .c-id{font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;color:var(--brand-2)}
+  .c-logo{font-family:var(--display);font-weight:600;font-size:1.3rem;color:var(--ink)}.c-logo b{color:var(--brand)}
+  .c-role{font-family:var(--mono);font-size:.69rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);margin:6px 0 12px}
+  .c-desc{color:var(--ink-soft);font-size:.94rem;margin-bottom:20px}
+  .c-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:auto}
+  .a-prim{font-size:.83rem;font-weight:500;color:#fff;background:var(--brand);padding:.6em 1em;border-radius:4px;transition:background .25s,transform .25s;display:inline-flex;gap:.5em;align-items:center}
+  .a-prim:hover{background:var(--brand-2);transform:translateY(-2px)}
+  .a-sec{font-size:.83rem;font-weight:500;color:var(--brand);border:1px solid var(--line-2);padding:.6em 1em;border-radius:4px;transition:.25s;display:inline-flex;gap:.5em;align-items:center}
+  .a-sec:hover{border-color:var(--brand-2);background:var(--surface-2)}
+  .soon-note{font-size:.78rem;color:var(--ink-soft);font-family:var(--mono)}
+  .badge{position:absolute;top:12px;left:12px;z-index:2;font-family:var(--mono);font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:#fff;background:rgba(156,116,48,.92);padding:5px 9px;border-radius:99px;display:inline-flex;align-items:center;gap:.5em}
+  .badge .dot{width:6px;height:6px;border-radius:50%;background:#fff}
+
+  /* COMMUNITY BAND */
+  .band{position:relative;overflow:hidden;min-height:clamp(380px,48vw,560px);display:flex;align-items:center;color:#fff}
+  .band-illu{position:absolute;inset:0;width:100%;height:100%;z-index:0}
+  .band-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
+  .band-scrim{position:absolute;inset:0;z-index:2;background:linear-gradient(90deg,rgba(8,20,42,.86),rgba(8,20,42,.55) 55%,rgba(8,20,42,.25))}
+  .band .wrap{position:relative;z-index:3;padding-block:64px}
+  .band .eyebrow{color:#A9CBF0}.band .eyebrow::before{background:#A9CBF0}
+  .band h2{color:#fff;font-size:clamp(2rem,4.6vw,3.3rem);margin:.5em 0 .5em;max-width:18ch}
+  .band p{color:#E4EEFA;max-width:54ch;font-size:1.05rem}
+
+  /* BEYOND */
+  .beyond{background:linear-gradient(180deg,var(--surface),var(--surface-2))}
+  .feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:8px}
+  @media (max-width:760px){.feature-grid{grid-template-columns:1fr}}
+  .feature{position:relative;border:1px solid var(--line);border-radius:10px;overflow:hidden;box-shadow:var(--shadow-sm);transition:.3s;background:var(--surface)}
+  .feature:hover{transform:translateY(-3px);box-shadow:var(--shadow-md);border-color:color-mix(in srgb,var(--gold) 45%,transparent)}
+  .feature .f-illu{position:relative;aspect-ratio:16/7;overflow:hidden;background:linear-gradient(160deg,var(--i-sky1),var(--surface-2))}
+  .feature .f-illu img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .feature .f-body{padding:28px 30px 30px}
+  .feature .f-tag{font-family:var(--mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+  .feature .f-big{font-family:var(--display);font-size:clamp(1.7rem,3.6vw,2.4rem);color:var(--ink);margin:.35em 0 .3em;font-weight:600}
+  .feature h3{font-size:1.2rem;color:var(--ink);margin-bottom:.5em;font-weight:500}
+  .feature p{color:var(--ink-soft);font-size:.95rem}
+
+  /* COMMITMENT */
+  .commitment{background:var(--bg)}
+  .pillars{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line-2)}
+  @media (max-width:900px){.pillars{grid-template-columns:repeat(2,1fr)}}
+  @media (max-width:520px){.pillars{grid-template-columns:1fr}}
+  .pillar{padding:30px 24px 34px;border-bottom:1px solid var(--line-2);border-right:1px solid var(--line-2)}
+  .pillars .pillar:nth-child(4n){border-right:none}
+  @media (max-width:900px){.pillars .pillar:nth-child(2n){border-right:none}.pillars .pillar:nth-child(4n){border-right:1px solid var(--line-2)}}
+  @media (max-width:520px){.pillar{border-right:none}}
+  .pillar .p-no{font-family:var(--mono);font-size:.72rem;color:var(--brand-2);margin-bottom:14px}
+  .pillar h3{font-size:1.16rem;color:var(--ink);margin-bottom:.5em;font-weight:500}.pillar p{color:var(--ink-soft);font-size:.91rem}
+  .creed{margin-top:clamp(44px,7vw,72px);text-align:center;max-width:28ch;margin-inline:auto;font-family:var(--display);font-style:italic;font-size:clamp(1.4rem,3.3vw,2.1rem);color:var(--ink);line-height:1.25}
+  .creed .u{color:var(--brand);font-style:normal}
+
+  /* FIND */
+  .find{background:linear-gradient(180deg,var(--bg),var(--surface))}
+  .router{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+  @media (max-width:640px){.router{grid-template-columns:1fr}}
+  .route{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:22px 24px;border:1px solid var(--line);border-radius:6px;background:var(--surface);transition:.25s;box-shadow:var(--shadow-sm)}
+  .route:hover{border-color:var(--brand-2);transform:translateX(4px);box-shadow:var(--shadow-md)}
+  .route .r-q{font-weight:500;color:var(--ink);font-size:1.01rem}
+  .route .r-to{font-family:var(--mono);font-size:.74rem;letter-spacing:.06em;color:var(--brand);white-space:nowrap}
+  .route.disabled{opacity:.65;pointer-events:none}.route.disabled .r-to{color:var(--gold)}
+
+  /* ENQUIRY */
+  .enquiry{background:linear-gradient(160deg,var(--panel-from),var(--panel-to));color:var(--panel-ink);border-top:1px solid var(--line)}
+  .enquiry .eyebrow{color:var(--panel-acc)}.enquiry .eyebrow::before{background:var(--panel-acc)}
+  .enquiry-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(34px,6vw,72px);align-items:start}
+  @media (max-width:820px){.enquiry-grid{grid-template-columns:1fr}}
+  .e-intro h2{font-size:clamp(1.9rem,4.4vw,3rem);margin:.4em 0;color:var(--panel-ink)}.e-intro p{color:var(--panel-ink-soft)}
+  .e-meta{margin-top:26px;font-family:var(--mono);font-size:.8rem;color:var(--panel-ink-mute);line-height:2}.e-meta a{color:var(--panel-acc)}
+  form.e-form{display:grid;grid-template-columns:1fr 1fr;gap:16px}form.e-form .full{grid-column:1/-1}
+  .field label{display:block;font-family:var(--mono);font-size:.69rem;letter-spacing:.12em;text-transform:uppercase;color:var(--panel-ink-mute);margin-bottom:8px}
+  .field input,.field select,.field textarea{width:100%;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22);border-radius:5px;padding:13px 14px;color:#fff;font-family:var(--body);font-size:.95rem;transition:.2s}
+  .field textarea{min-height:128px;resize:vertical}.field input::placeholder,.field textarea::placeholder{color:#9fb6d6}
+  .field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--panel-acc);background:rgba(255,255,255,.14)}
+  .field select option{background:#123;color:#fff}
+  .e-submit{grid-column:1/-1;display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:4px}
+  .e-submit .btn-primary{background:#fff;color:var(--panel-from)}.e-submit .btn-primary:hover{background:#EAF1FB}
+  .e-note{font-size:.82rem;color:var(--panel-ink-mute)}
+
+  /* FOOTER */
+  footer.site{background:var(--surface);border-top:1px solid var(--line);padding-block:58px 28px}
+  .foot-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:36px}
+  @media (max-width:820px){.foot-top{grid-template-columns:1fr 1fr}}@media (max-width:520px){.foot-top{grid-template-columns:1fr}}
+  .foot-brand .name{font-family:var(--display);font-size:1.4rem;font-weight:600;margin-bottom:12px;color:var(--ink)}.foot-brand .name b{color:var(--brand)}
+  .foot-brand p{color:var(--ink-soft);font-size:.92rem;max-width:32ch}
+  .foot-aotearoa{margin-top:15px;font-family:var(--mono);font-size:.72rem;letter-spacing:.08em;color:var(--gold)}
+  .foot-col h4{font-family:var(--mono);font-size:.69rem;letter-spacing:.14em;text-transform:uppercase;color:var(--brand);margin-bottom:14px}
+  .foot-col a,.foot-col span{display:block;color:var(--ink-soft);font-size:.9rem;padding:6px 0;transition:color .2s}.foot-col a:hover{color:var(--brand)}.foot-col .muted{opacity:.6}
+  .foot-bottom{margin-top:44px;padding-top:22px;border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-family:var(--mono);font-size:.72rem;color:var(--ink-soft)}
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}.reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.scroll-cue .bar{animation:none}}
+  .goog-te-banner-frame.skiptranslate,.goog-te-gadget-icon{display:none!important}body{top:0!important}
+  #goog-gt-tt,.goog-te-balloon-frame{display:none!important}.goog-text-highlight{background:none!important;box-shadow:none!important}
+  #google_translate_element{position:absolute;left:-9999px;top:-9999px;height:0;overflow:hidden}.goog-tooltip{display:none!important}
+  .policy-overlay{position:fixed;inset:0;z-index:120;display:none;align-items:flex-start;justify-content:center;padding:max(20px,4vh) 16px;background:rgba(8,20,42,.62);backdrop-filter:blur(6px);overflow-y:auto}
+  .policy-overlay.open{display:flex}
+  .policy-modal{position:relative;width:min(820px,100%);background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow-md);padding:clamp(24px,5vw,52px);margin:auto}
+  .policy-modal h2{font-family:var(--display);font-size:clamp(1.6rem,3.6vw,2.3rem);font-weight:600;color:var(--ink);margin-bottom:.15em;padding-right:40px}
+  .policy-eff{font-family:var(--mono);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:1.4em;display:block}
+  .policy-modal h3{font-family:var(--display);font-size:1.16rem;font-weight:600;color:var(--ink);margin:1.5em 0 .45em}
+  .policy-modal p{color:var(--ink-2);font-size:.94rem;line-height:1.7;margin-bottom:.7em}
+  .policy-modal ul{padding-left:1.2em;margin:.2em 0 .8em}.policy-modal li{color:var(--ink-2);font-size:.94rem;line-height:1.65;margin-bottom:.4em}
+  .policy-modal a{color:var(--brand);text-decoration:underline}.policy-modal strong{color:var(--ink);font-weight:600}
+  .policy-close{position:absolute;top:16px;right:16px;width:40px;height:40px;border-radius:99px;border:1px solid var(--line-2);background:var(--surface);color:var(--ink-2);font-size:1.1rem;cursor:pointer;display:grid;place-items:center;transition:.2s;z-index:2}
+  .policy-close:hover{border-color:var(--brand-2);color:var(--brand)}
+  .policy-intro{background:var(--surface-2);border-radius:8px;padding:14px 16px;font-size:.92rem;color:var(--ink-soft);line-height:1.65;margin-bottom:.6em}
+  .policy-foot{margin-top:2em;padding-top:1.2em;border-top:1px solid var(--line);font-size:.83rem;color:var(--ink-soft);line-height:1.6}
+</style>
+</head>
+<body>
+<div id="google_translate_element" aria-hidden="true"></div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand" aria-label="MJ Group home"><span class="mark">MJ</span><span class="name">MJ&nbsp;<b>Group</b></span></a>
+    <div class="nav-right">
+      <nav class="nav-links" id="navLinks" aria-label="Primary"><a href="#top">Home</a><a href="#group">Our Group</a><a href="#companies">Our Companies</a><a href="#enquiry">Contact</a></nav>
+      <div class="nav-tools">
+        <button class="theme-btn" id="themeBtn" aria-label="Switch to dark mode" title="Switch theme">
+          <svg class="ico-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.6 4.6l1.7 1.7M17.7 17.7l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.6 19.4l1.7-1.7M17.7 6.3l1.7-1.7"/></svg>
+          <svg class="ico-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.3 6.3 0 0 0 10.5 10.5z"/></svg>
+        </button>
+        <div class="lang" id="lang">
+          <button class="lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false" aria-label="Choose language">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 2.5 15 0 18M12 3c-2.5 2.5-2.5 15 0 18"/></svg>
+            <span class="lbl" id="langLbl">English</span><span class="chev">▾</span>
+          </button>
+          <div class="lang-panel" id="langPanel" role="menu"><div class="lp-head">Read this site in</div><div class="lang-grid" id="langGrid"></div><div class="lang-note" id="langNote"></div></div>
+        </div>
+        <a href="#enquiry" class="btn btn-primary nav-cta-desktop" style="padding:.6em 1.1em">Get in touch</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <svg class="hero-illu illu" viewBox="0 0 1440 820" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><defs><linearGradient id="hsky" x1="0" y1="0" x2="0" y2="1"><stop class="sky-t" offset="0"/><stop class="sky-b" offset="1"/></linearGradient></defs><rect width="1440" height="820" fill="url(#hsky)"/><path class="far" d="M0 472 L300 410 L700 460 L1100 405 L1440 455 L1440 820 L0 820Z" opacity=".7"/><path class="mid" d="M0 545 Q360 492 720 540 T1440 532 L1440 820 L0 820Z" opacity=".85"/><g><rect class="b3" x="330" y="384" width="74" height="236"/><rect class="b2" x="556" y="356" width="88" height="264"/><rect class="b2" x="892" y="338" width="96" height="282"/><rect class="b3" x="1130" y="396" width="84" height="224"/></g></svg>
+  <img class="hero-photo" alt="Auckland city skyline at sunset, Aotearoa New Zealand" src="https://images.unsplash.com/photo-1743113488160-e7000f015ead?fm=jpg&amp;q=80&amp;w=1920&amp;auto=format&amp;fit=crop" fetchpriority="high" decoding="async" onerror="this.style.display='none'">
+  <div class="hero-scrim" aria-hidden="true"></div>
+  <div class="hero-inner wrap">
+    <div class="eyebrow hero-eyebrow" data-i18n="eyebrow">Aotearoa New Zealand · Kiwi owned &amp; operated</div>
+    <h1 data-i18n="h1">Investing in New&nbsp;Zealand<br>and its <span class="em">future.</span></h1>
+    <p class="lede" data-i18n="lede">MJ Group is a Kiwi-owned and operated group investing across residential property, commercial property, healthcare, asset services, education and future-focused innovation.</p>
+    <div class="hero-tags"><span data-i18n="t1">Kiwi owned.</span><span data-i18n="t2">Locally invested.</span><span data-i18n="t3">Future focused.</span></div>
+    <div class="hero-cta"><a href="#companies" class="btn btn-primary"><span data-i18n="cta1">Explore our companies</span> <span class="arr">→</span></a><a href="#find" class="btn btn-ghost" data-i18n="cta2">Find the right team</a></div>
+  </div>
+  <div class="scroll-cue" aria-hidden="true"><span class="bar"></span>Scroll</div>
+</section>
+
+<!-- GROUP -->
+<section class="section purpose" id="group">
+  <div class="wrap">
+    <div class="purpose-grid reveal">
+      <div class="purpose-copy">
+        <div class="eyebrow">Our group</div>
+        <h2>New Zealand investment<br>with long-term purpose.</h2>
+        <p>MJ Group is the corporate home of a growing collection of New Zealand property, healthcare and investment businesses — one group, with clear specialist roles.</p>
+        <p>The profits generated by our group are retained and reinvested in New Zealand: supporting employment, property improvement, community, education and research.</p>
+        <p>We take a long-term view — to build successful businesses, and use that success to create further opportunity for New Zealand and its people.</p>
+      </div>
+      <div class="photo-panel">
+        <img alt="Auckland skyline at night, New Zealand" src="https://images.pexels.com/photos/31875647/pexels-photo-31875647.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200&amp;h=1000&amp;fit=crop" loading="lazy" decoding="async" onerror="this.style.display='none'">
+        <div class="photo-cap"><span class="pin"></span>Auckland · Aotearoa New Zealand</div>
+      </div>
+    </div>
+    <div class="stats-row reveal">
+      <div class="stat"><span class="n">100%</span><span class="l">Kiwi owned and operated — decisions and value stay here in Aotearoa.</span></div>
+      <div class="stat"><span class="n gold">$40k</span><span class="l">Committed annually to an AUT student scholarship.</span></div>
+      <div class="stat"><span class="n">6</span><span class="l">Specialist businesses across property, healthcare and innovation.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPANIES -->
+<section class="section companies" id="companies">
+  <div class="wrap">
+    <div class="section-head reveal"><div class="eyebrow">Our companies</div><h2>One group. Clear specialist roles.</h2><p>Each company has a distinct purpose and its own website. MJ Group connects the brands and helps you reach the right team.</p></div>
+    <div class="cards">
+
+      <article class="card reveal">
+        <div class="c-illu"><svg class="illu" viewBox="0 0 400 250" aria-hidden="true"><rect width="400" height="250" fill="var(--i-sky2)"/><rect class="b2" x="120" y="120" width="160" height="110"/><path class="roof" d="M108 122 L200 70 L292 122Z"/></svg>
+          <img alt="Modern New Zealand home exterior" src="https://images.pexels.com/photos/7587880/pexels-photo-7587880.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900&amp;h=560&amp;fit=crop" loading="lazy" decoding="async" onerror="this.style.display='none'">
+          <span class="tagchip">Rentals</span></div>
+        <div class="c-body"><div class="c-top"><span class="c-id">01</span><span class="c-logo">MJ&nbsp;<b>Home</b></span></div><div class="c-role">Long-term residential rentals</div><p class="c-desc">Long-term rental homes designed, built and improved for warm, comfortable, practical Kiwi living.</p><div class="c-actions"><a class="a-prim" href="https://www.mjhome.co.nz" target="_blank" rel="noopener">Visit MJ Home →</a><a class="a-sec" href="https://www.mjhome.co.nz" target="_blank" rel="noopener">Find a rental</a></div></div>
+      </article>
+
+      <article class="card reveal">
+        <div class="c-illu"><svg class="illu" viewBox="0 0 400 250" aria-hidden="true"><rect width="400" height="250" fill="var(--i-sky2)"/><rect class="b1" x="110" y="110" width="180" height="120"/><path class="roof" d="M98 112 L200 64 L302 112Z"/></svg>
+          <img alt="Contemporary architect-designed home" src="https://images.pexels.com/photos/13041118/pexels-photo-13041118.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900&amp;h=560&amp;fit=crop" loading="lazy" decoding="async" onerror="this.style.display='none'">
+          <span class="tagchip">For sale</span></div>
+        <div class="c-body"><div class="c-top"><span class="c-id">02</span><span class="c-logo">MJ&nbsp;<b>Living</b></span></div><div class="c-role">Homes for sale</div><p class="c-desc">Renovates existing properties and develops new homes for sale, with a focus on quality, comfort and modern living.</p><div class="c-actions"><a class="a-prim" href="https://www.mjliving.co.nz" target="_blank" rel="noopener">Visit MJ Living →</a><a class="a-sec" href="https://www.mjliving.co.nz" target="_blank" rel="noopener">View homes</a></div></div>
+      </article>
+
+      <article class="card reveal">
+        <div class="c-illu"><svg class="illu" viewBox="0 0 400 250" aria-hidden="true"><rect width="400" height="250" fill="var(--i-sky2)"/><rect class="b2" x="120" y="60" width="90" height="170"/><rect class="b3" x="230" y="100" width="70" height="130"/></svg>
+          <img alt="Modern glass office buildings under development" src="https://images.pexels.com/photos/17398146/pexels-photo-17398146.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900&amp;h=560&amp;fit=crop" loading="lazy" decoding="async" onerror="this.style.display='none'">
+          <span class="tagchip">Commercial</span></div>
+        <div class="c-body"><div class="c-top"><span class="c-id">03</span><span class="c-logo">MJ&nbsp;<b>Commercial</b></span></div><div class="c-role">Commercial property</div><p class="c-desc">Acquires, improves, maintains and leases commercial property — practical spaces where businesses operate and grow.</p><div class="c-actions"><a class="a-prim" href="https://www.mjcommercial.co.nz" target="_blank" rel="noopener">Visit MJ Commercial →</a><a class="a-sec" href="https://www.mjcommercial.co.nz" target="_blank" rel="noopener">View properties</a></div></div>
+      </article>
+
+      <article class="card reveal">
+        <div class="c-illu"><svg class="illu" viewBox="0 0 400 250" aria-hidden="true"><rect width="400" height="250" fill="var(--i-sky2)"/><rect class="b2" x="130" y="100" width="140" height="130"/></svg>
+          <img alt="Modern timber-clad home" src="https://images.pexels.com/photos/30484316/pexels-photo-30484316.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900&amp;h=560&amp;fit=crop" loading="lazy" decoding="async" onerror="this.style.display='none'">
+          <span class="tagchip">Services</span></div>
+        <div class="c-body"><div class="c-top"><span class="c-id">04</span><span class="c-logo">MJ&nbsp;<b>Asset</b></span></div><div class="c-role">Property &amp; asset services</div><p class="c-desc">Property maintenance and asset support that helps protect, improve and operate property over the long term.</p><div class="c-actions"><a class="a-prim" href="https://www.mjasset.co.nz" target="_blank" rel="noopener">Visit MJ Asset →</a></div></div>
+      </article>
+
+      <article class="card reveal">
+        <div class="c-illu"><svg class="illu" viewBox="0 0 400 250" aria-hidden="true"><rect width="400" height="250" fill="var(--i-sky2)"/><rect class="b2" x="130" y="100" width="120" height="130"/></svg>
+          <img alt="Construction site with crane at dusk" src="https://images.pexels.com/photos/29174068/pexels-photo-29174068.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900&amp;h=560&amp;fit=crop" loading="lazy" decoding="async" onerror="this.style.display='none'">
+          <span class="badge"><span class="dot"></span>Under construction</span></div>
+        <div class="c-body"><div class="c-top"><span class="c-id">05</span><span class="c-logo">MJ&nbsp;<b>Healthcare</b></span></div><div class="c-role">Investing in the future of NZ care</div><p class="c-desc">Being developed to support the future care needs of New Zealand communities. Our first project in Tokoroa is under construction.</p><div class="c-actions"><span class="soon-note">Website coming closer to opening.</span></div></div>
+      </article>
+
+      <article class="card reveal">
+        <div class="c-illu"><svg class="illu" viewBox="0 0 400 250" aria-hidden="true"><rect width="400" height="250" fill="var(--i-sky2)"/><path class="mid" d="M0 170 Q200 120 400 170 L400 250 L0 250Z"/></svg>
+          <img alt="Lake Wakatipu and mountains, Queenstown, New Zealand" src="https://images.pexels.com/photos/14788541/pexels-photo-14788541.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900&amp;h=560&amp;fit=crop" loading="lazy" decoding="async" onerror="this.style.display='none'">
+          <span class="tagchip">Approach</span></div>
+        <div class="c-body"><div class="c-top"><span class="c-id">—</span><span class="c-logo">Our&nbsp;<b>approach</b></span></div><div class="c-role">How we work</div><p class="c-desc">Long-term thinking, clear purpose — improving quality and usability, with every company focused on the customers it serves.</p><div class="c-actions"><a class="a-sec" href="#group">Our group ↗</a></div></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- COMMUNITY BAND -->
+<section class="band" id="community">
+  <svg class="band-illu illu" viewBox="0 0 1440 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="1440" height="600" fill="#0E2A56"/><path d="M0 360 Q360 300 720 356 T1440 332 L1440 600 L0 600Z" fill="#17427c"/><path d="M0 430 Q400 372 820 430 T1440 410 L1440 600 L0 600Z" fill="#10315c"/></svg>
+  <img class="band-photo" alt="Aerial view of Queenstown and the Southern Alps, New Zealand" src="https://images.pexels.com/photos/9485548/pexels-photo-9485548.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1920&amp;h=1080&amp;fit=crop" loading="lazy" decoding="async" onerror="this.style.display='none'">
+  <div class="band-scrim" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="reveal"><div class="eyebrow">Invested in Aotearoa</div><h2>Profits stay here. Communities grow with us.</h2><p>The value our businesses create is retained and reinvested in New Zealand — in homes, jobs, healthcare, education and research. When the group grows, the country grows with it.</p></div>
+  </div>
+</section>
+
+<!-- BEYOND -->
+<section class="section beyond" id="beyond">
+  <div class="wrap">
+    <div class="section-head reveal"><div class="eyebrow gold">Investing beyond property</div><h2>Backing people, research<br>and the Kiwi future.</h2><p>MJ Group's commitment to New Zealand extends beyond property — into education and innovation.</p></div>
+    <div class="feature-grid">
+      <div class="feature reveal">
+        <div class="f-illu"><img alt="University students on campus" src="https://images.pexels.com/photos/13041118/pexels-photo-13041118.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900&amp;h=400&amp;fit=crop" loading="lazy" decoding="async" onerror="this.style.display='none'"></div>
+        <div class="f-body"><div class="f-tag">Education · AUT</div><div class="f-big">$40,000 a year</div><h3>Annual AUT scholarship</h3><p>An annual scholarship commitment supporting AUT students — helping talented people build their capabilities and careers, and contribute to New Zealand's future.</p></div>
+      </div>
+      <div class="feature reveal">
+        <div class="f-illu"><img alt="Robotics and innovation research" src="https://images.pexels.com/photos/17398146/pexels-photo-17398146.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900&amp;h=400&amp;fit=crop" loading="lazy" decoding="async" onerror="this.style.display='none'"></div>
+        <div class="f-body"><div class="f-tag">Innovation · Robotics</div><div class="f-big">Robotics research</div><h3>Working with AUT</h3><p>Collaborative robotics research spanning humanoid and quadruped robots — exploring how emerging technologies may support retail, property operations, healthcare and aged care.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMMITMENT -->
+<section class="section commitment" id="commitment">
+  <div class="wrap">
+    <div class="section-head reveal"><div class="eyebrow">Our commitment</div><h2>When our businesses grow,<br>New Zealand grows with us.</h2></div>
+    <div class="pillars reveal">
+      <div class="pillar"><div class="p-no">01</div><h3>Kiwi owned &amp; operated</h3><p>MJ Group is proudly New Zealand owned and operated.</p></div>
+      <div class="pillar"><div class="p-no">02</div><h3>Profits reinvested in NZ</h3><p>Value created is retained and reinvested to support further New Zealand growth and opportunity.</p></div>
+      <div class="pillar"><div class="p-no">03</div><h3>Investing in communities</h3><p>We invest in homes, commercial spaces, healthcare, employment, education and stronger communities.</p></div>
+      <div class="pillar"><div class="p-no">04</div><h3>Investing in the Kiwi future</h3><p>We support people, research and technologies that help New Zealand prepare for the future.</p></div>
+    </div>
+    <p class="creed reveal">Invest in New Zealand. Build local capability. <span class="u">Create opportunities for the future.</span></p>
+  </div>
+</section>
+
+<!-- FIND -->
+<section class="section find" id="find">
+  <div class="wrap">
+    <div class="section-head reveal"><div class="eyebrow">Find the right team</div><h2>Tell us what you need —<br>we'll point you the right way.</h2><p>Looking to rent, buy, lease commercial space or reach one of our teams? Choose the path that fits.</p></div>
+    <div class="router reveal">
+      <a class="route" href="https://www.mjhome.co.nz" target="_blank" rel="noopener"><span class="r-q">Rent a long-term home</span><span class="r-to">MJ Home →</span></a>
+      <a class="route" href="https://www.mjliving.co.nz" target="_blank" rel="noopener"><span class="r-q">Buy a home</span><span class="r-to">MJ Living →</span></a>
+      <a class="route" href="https://www.mjcommercial.co.nz" target="_blank" rel="noopener"><span class="r-q">Lease commercial space</span><span class="r-to">MJ Commercial →</span></a>
+      <a class="route" href="https://www.mjasset.co.nz" target="_blank" rel="noopener"><span class="r-q">Property &amp; asset services</span><span class="r-to">MJ Asset →</span></a>
+      <a class="route disabled" aria-disabled="true"><span class="r-q">Healthcare in Tokoroa</span><span class="r-to">Coming soon</span></a>
+      <a class="route" href="#enquiry"><span class="r-q">Corporate, scholarship or research</span><span class="r-to">MJ Group →</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ENQUIRY -->
+<section class="section enquiry" id="enquiry">
+  <div class="wrap">
+    <div class="enquiry-grid">
+      <div class="e-intro reveal"><div class="eyebrow">General enquiry</div><h2>Talk to MJ Group.</h2><p>For corporate, partnership, scholarship and research enquiries. For renting, buying or leasing, the links above get you there fastest.</p>
+        <div class="e-meta"><div>EMAIL&nbsp;&nbsp;<a href="mailto:enquiries@mjgroup.nz">enquiries@mjgroup.nz</a></div><div>BASED&nbsp;&nbsp;Aotearoa New Zealand</div></div>
+      </div>
+      <form class="e-form reveal" id="enquiryForm" novalidate>
+        <div class="field"><label for="f-name">Your name</label><input id="f-name" type="text" autocomplete="name" placeholder="Full name"></div>
+        <div class="field"><label for="f-email">Email</label><input id="f-email" type="email" autocomplete="email" placeholder="you@example.com"></div>
+        <div class="field full"><label for="f-company">Which part of MJ Group?</label>
+          <select id="f-company"><option>General enquiry</option><option>MJ Home — rentals</option><option>MJ Living — homes for sale</option><option>MJ Commercial — commercial property</option><option>MJ Asset — property &amp; asset services</option><option>MJ Healthcare — Tokoroa</option><option>AUT scholarship</option><option>Robotics &amp; research</option><option>Partnership / corporate</option></select>
+        </div>
+        <div class="field full"><label for="f-message">Message</label><textarea id="f-message" placeholder="How can we help?"></textarea></div>
+        <div class="e-submit"><button type="submit" class="btn btn-primary">Send enquiry <span class="arr">→</span></button><span class="e-note">Opens your email app, pre-addressed to MJ Group.</span></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand"><div class="name">MJ&nbsp;<b>Group</b></div><p>The corporate home of a growing collection of New Zealand property, healthcare and investment businesses.</p><div class="foot-aotearoa">Proudly Aotearoa New Zealand owned &amp; operated.</div></div>
+      <div class="foot-col"><h4>Companies</h4><a href="https://www.mjhome.co.nz" target="_blank" rel="noopener">MJ Home</a><a href="https://www.mjliving.co.nz" target="_blank" rel="noopener">MJ Living</a><a href="https://www.mjcommercial.co.nz" target="_blank" rel="noopener">MJ Commercial</a><a href="https://www.mjasset.co.nz" target="_blank" rel="noopener">MJ Asset</a><span class="muted">MJ Healthcare — coming soon</span></div>
+      <div class="foot-col"><h4>Group</h4><a href="#group">Our group</a><a href="#companies">Our companies</a><a href="#community">Communities</a><a href="#beyond">Scholarship &amp; research</a></div>
+      <div class="foot-col"><h4>Legal</h4><a href="#" class="open-policy" data-policy="privacy">Privacy policy</a><a href="#" class="open-policy" data-policy="disclaimer">Website disclaimer</a><a href="#enquiry">Contact</a></div>
+    </div>
+    <div class="foot-bottom"><span>© <span id="year"></span> MJ Group. All rights reserved.</span><span>Kiwi owned. Locally invested. Future focused.</span></div>
+  </div>
+</footer>
+
+<!-- LEGAL: PRIVACY & DISCLAIMER -->
+<div class="policy-overlay" id="policyOverlay" role="dialog" aria-modal="true" aria-hidden="true">
+
+  <article class="policy-modal" id="doc-privacy" role="document">
+    <button class="policy-close" type="button" aria-label="Close">✕</button>
+    <h2>Privacy Policy</h2>
+    <span class="policy-eff">Last updated: June 2026</span>
+    <div class="policy-intro">MJ Group respects your privacy. This policy explains how we collect, use, store and protect personal information through this website, in line with the New Zealand Privacy Act 2020. In this policy, “MJ Group”, “we”, “us” and “our” refer to MJ Group and its related companies, including MJ Home, MJ Living, MJ Commercial, MJ Asset and MJ Healthcare.</div>
+
+    <h3>1. Scope</h3>
+    <p>This policy applies to the MJ Group website at mjgroup.nz. Our trading companies operate their own websites and may have their own privacy policies, which apply when you use those sites.</p>
+
+    <h3>2. Information we collect</h3>
+    <ul>
+      <li><strong>Information you give us:</strong> when you make an enquiry through our form or by email, we collect your name, email address, the company or topic you select, and the content of your message.</li>
+      <li><strong>Information collected automatically:</strong> like most websites, our hosting and any analytics tools may record limited technical information such as your IP address, browser and device type, and the pages you view. This helps us keep the site secure and understand how it is used.</li>
+      <li><strong>Cookies and preferences:</strong> small files and local settings are used for basic functions — such as remembering your light/dark theme and language choice — and, where enabled, for analytics.</li>
+    </ul>
+
+    <h3>3. How we use your information</h3>
+    <p>We use your information to respond to and manage your enquiry, to direct you to the right company within our group, to operate, secure and improve this website, and to meet our legal obligations.</p>
+
+    <h3>4. Sharing your information</h3>
+    <p>We do not sell your personal information. We may share it with the relevant MJ Group company needed to handle your enquiry; with trusted service providers who help us run the website and our communications (such as hosting and email providers) under confidentiality; and with authorities where required or permitted by law.</p>
+
+    <h3>5. Third-party services</h3>
+    <p>This site offers optional translation via Google Translate; when you use it, that interaction is also subject to Google's terms. External sites we link to — including our trading companies' websites — have their own privacy practices, for which we are not responsible.</p>
+
+    <h3>6. Storage and security</h3>
+    <p>We take reasonable steps to protect personal information from loss, misuse and unauthorised access. Information may be held by us or by reputable service providers, which may store data inside or outside New Zealand. Where information is held overseas, we take reasonable steps to ensure it has comparable protection.</p>
+
+    <h3>7. How long we keep it</h3>
+    <p>We keep personal information only for as long as needed for the purposes described above, or as required by law, after which we delete or de-identify it.</p>
+
+    <h3>8. Your rights</h3>
+    <p>Under the Privacy Act 2020 you may ask to access the personal information we hold about you and to request corrections. To do so, contact us using the details below. You may also raise any concern with the Office of the Privacy Commissioner at <a href="https://www.privacy.org.nz" target="_blank" rel="noopener">privacy.org.nz</a>.</p>
+
+    <h3>9. Children</h3>
+    <p>This website is not directed at children, and we do not knowingly collect personal information from them.</p>
+
+    <h3>10. Changes</h3>
+    <p>We may update this policy from time to time. The current version will always appear on this page with its “last updated” date.</p>
+
+    <h3>11. Contact us</h3>
+    <p>For any privacy question or request, email <a href="mailto:enquiries@mjgroup.nz">enquiries@mjgroup.nz</a> — MJ Group, Aotearoa New Zealand.</p>
+
+    <div class="policy-foot">© <span class="yr"></span> MJ Group. This policy is provided for general information and does not constitute legal advice.</div>
+  </article>
+
+  <article class="policy-modal" id="doc-disclaimer" role="document" style="display:none">
+    <button class="policy-close" type="button" aria-label="Close">✕</button>
+    <h2>Website Disclaimer</h2>
+    <span class="policy-eff">Last updated: June 2026</span>
+    <div class="policy-intro">The information on this website is provided by MJ Group in good faith and for general information only. By using this site you accept the terms of this disclaimer.</div>
+
+    <h3>1. General information</h3>
+    <p>While we take care to keep the content accurate and current, we make no representation or warranty, express or implied, as to its accuracy, completeness, reliability or suitability for any purpose. Any reliance you place on the information is at your own risk.</p>
+
+    <h3>2. Not professional or financial advice</h3>
+    <p>Nothing on this website constitutes financial, investment, legal, tax, accounting or other professional advice, and it should not be relied on as such. References to “investing”, our investments, scholarships, research or future activities are descriptions of MJ Group's business and intentions only.</p>
+
+    <h3>3. No offer of financial products</h3>
+    <p>Content on this site is not an offer, invitation, inducement or recommendation to buy, sell or apply for any financial product or security, and is not regulated disclosure under the Financial Markets Conduct Act 2013. Before making any decision, you should obtain your own independent professional advice.</p>
+
+    <h3>4. Our companies</h3>
+    <p>MJ Group is the parent brand for separate companies — MJ Home, MJ Living, MJ Commercial, MJ Asset and MJ Healthcare. Services such as renting, buying, leasing and property management are provided by those companies, or by independent providers, under their own terms. Please refer to the relevant company's website for details.</p>
+
+    <h3>5. External links</h3>
+    <p>This site contains links to third-party websites, including our trading companies. We are not responsible for the content, accuracy or practices of any external site, and a link does not imply our endorsement.</p>
+
+    <h3>6. Intellectual property</h3>
+    <p>Unless otherwise stated, the content, design, logos and trade marks on this site are owned by or licensed to MJ Group and may not be copied, reproduced or used without our prior written permission.</p>
+
+    <h3>7. Availability</h3>
+    <p>We do not warrant that this website will be available uninterrupted or free of errors, and we may change, suspend or remove content at any time without notice.</p>
+
+    <h3>8. Limitation of liability</h3>
+    <p>To the maximum extent permitted by law, MJ Group is not liable for any loss or damage, including indirect or consequential loss, arising from your use of, or reliance on, this website or its content. Nothing in this disclaimer limits any rights you may have under the Consumer Guarantees Act 1993 or other law that cannot be lawfully excluded.</p>
+
+    <h3>9. Governing law</h3>
+    <p>This website and this disclaimer are governed by the laws of New Zealand.</p>
+
+    <h3>10. Contact us</h3>
+    <p>Questions about this disclaimer can be sent to <a href="mailto:enquiries@mjgroup.nz">enquiries@mjgroup.nz</a> — MJ Group, Aotearoa New Zealand.</p>
+
+    <div class="policy-foot">© <span class="yr"></span> MJ Group. This disclaimer is provided for general information and does not constitute legal advice.</div>
+  </article>
+
+</div>
+
+<script>
+(function(){
+  var ov=document.getElementById("policyOverlay");if(!ov)return;
+  var docs={privacy:document.getElementById("doc-privacy"),disclaimer:document.getElementById("doc-disclaimer")};
+  document.querySelectorAll(".yr").forEach(function(s){s.textContent=new Date().getFullYear();});
+  function openP(which){Object.keys(docs).forEach(function(k){if(docs[k])docs[k].style.display=(k===which)?"block":"none";});ov.classList.add("open");ov.setAttribute("aria-hidden","false");ov.scrollTop=0;try{document.body.style.overflow="hidden";}catch(e){}}
+  function closeP(){ov.classList.remove("open");ov.setAttribute("aria-hidden","true");try{document.body.style.overflow="";}catch(e){}}
+  document.querySelectorAll(".open-policy").forEach(function(a){a.addEventListener("click",function(e){e.preventDefault();openP(a.getAttribute("data-policy"));});});
+  document.querySelectorAll(".policy-close").forEach(function(b){b.addEventListener("click",closeP);});
+  ov.addEventListener("click",function(e){if(e.target===ov)closeP();});
+  document.addEventListener("keydown",function(e){if(e.key==="Escape"&&ov.classList.contains("open"))closeP();});
+})();
+</script>
+
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async onerror="window.__gtFailed=true"></script>
+<script>
+function googleTranslateElementInit(){try{new google.translate.TranslateElement({pageLanguage:'en',includedLanguages:'en,mi,zh-CN,hi,sm,to,ko,vi,es,fr,de,ja,ar,pt,ru,it,tl,th,id,pa',autoDisplay:false,layout:google.translate.TranslateElement.InlineLayout.SIMPLE},'google_translate_element');}catch(e){}}
+(function(){
+  "use strict";
+  var reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  document.getElementById("year").textContent=new Date().getFullYear();
+
+  /* THEME */
+  var htmlEl=document.documentElement,themeBtn=document.getElementById("themeBtn"),theme="light";
+  try{var sv=localStorage.getItem("mjg-theme");if(sv==="dark"||sv==="light")theme=sv;}catch(e){}
+  function applyTheme(t){theme=t;htmlEl.setAttribute("data-theme",t);themeBtn.setAttribute("aria-label",t==="dark"?"Switch to light mode":"Switch to dark mode");var m=document.querySelector('meta[name="theme-color"]');if(m)m.setAttribute("content",t==="dark"?"#0A1730":"#FFFFFF");try{localStorage.setItem("mjg-theme",t);}catch(e){}}
+  applyTheme(theme);
+  themeBtn.addEventListener("click",function(){applyTheme(theme==="dark"?"light":"dark");});
+
+  /* NAV */
+  var nav=document.getElementById("nav"),toggle=document.getElementById("navToggle"),links=document.getElementById("navLinks");
+  window.addEventListener("scroll",function(){nav.classList.toggle("scrolled",window.scrollY>40);},{passive:true});
+  toggle.addEventListener("click",function(){var o=links.classList.toggle("open");toggle.setAttribute("aria-expanded",o?"true":"false");toggle.textContent=o?"✕":"☰";});
+  links.querySelectorAll("a").forEach(function(a){a.addEventListener("click",function(){links.classList.remove("open");toggle.textContent="☰";});});
+
+  /* LANGUAGE */
+  var LANGS=[{code:"en",nm:"English",en:"English"},{code:"mi",nm:"Te Reo Māori",en:"Māori"},{code:"zh-CN",nm:"中文 (简体)",en:"Chinese"},{code:"hi",nm:"हिन्दी",en:"Hindi"},{code:"sm",nm:"Gagana Sāmoa",en:"Samoan"},{code:"to",nm:"Lea Fakatonga",en:"Tongan"},{code:"ko",nm:"한국어",en:"Korean"},{code:"vi",nm:"Tiếng Việt",en:"Vietnamese"},{code:"es",nm:"Español",en:"Spanish"},{code:"fr",nm:"Français",en:"French"},{code:"de",nm:"Deutsch",en:"German"},{code:"ja",nm:"日本語",en:"Japanese"},{code:"ar",nm:"العربية",en:"Arabic"},{code:"pt",nm:"Português",en:"Portuguese"},{code:"ru",nm:"Русский",en:"Russian"},{code:"it",nm:"Italiano",en:"Italian"},{code:"tl",nm:"Tagalog",en:"Filipino"},{code:"th",nm:"ไทย",en:"Thai"},{code:"id",nm:"Bahasa Indonesia",en:"Indonesian"},{code:"pa",nm:"ਪੰਜਾਬੀ",en:"Punjabi"}];
+  var I18N={"mi":{eyebrow:"Aotearoa · nā te tangata whenua",h1:'Te haumi ki Aotearoa<br>me tōna <span class="em">āpōpō.</span>',lede:"He rōpū nā Aotearoa, nā Aotearoa e whakahaere ana, e haumi ana ki te whare nohonga, te whare pakihi, te hauora, ngā ratonga, te mātauranga me te auahatanga.",t1:"Nā Aotearoa.",t2:"Haumi ā-rohe.",t3:"Anga whakamua.",cta1:"Tirohia ā mātou kamupene",cta2:"Kimihia te tīma tika"},"zh-CN":{eyebrow:"新西兰 · 新西兰人拥有并运营",h1:'投资新西兰<br>与它的<span class="em">未来。</span>',lede:"MJ Group 是一家由新西兰人拥有并运营的集团，投资于住宅、商业地产、医疗、资产服务、教育和面向未来的创新。",t1:"新西兰所有。",t2:"本地投资。",t3:"着眼未来。",cta1:"探索我们的公司",cta2:"找到合适的团队"},"hi":{eyebrow:"न्यूज़ीलैंड · कीवी स्वामित्व",h1:'न्यूज़ीलैंड और उसके<br><span class="em">भविष्य</span> में निवेश।',lede:"MJ Group एक कीवी-स्वामित्व वाला समूह है जो आवासीय, वाणिज्यिक संपत्ति, स्वास्थ्य सेवा, सेवाओं, शिक्षा और नवाचार में निवेश करता है।",t1:"कीवी स्वामित्व।",t2:"स्थानीय निवेश।",t3:"भविष्य केंद्रित।",cta1:"हमारी कंपनियाँ देखें",cta2:"सही टीम खोजें"},"sm":{eyebrow:"Niu Sila · E ona e Niu Sila",h1:'Faʻafaigaluega i Niu Sila<br>ma lona <span class="em">lumanaʻi.</span>',lede:"O le MJ Group o se vaega e ona ma faʻagaioia e Niu Sila, e faʻafaigaluegaina i fale, fanua faʻapisinisi, soifua maloloina, auaunaga, aʻoaʻoga ma mea fou.",t1:"E ona e Niu Sila.",t2:"Faʻafaigaluega faʻalotoifale.",t3:"Vaʻai i luma.",cta1:"Vaʻai i a matou kamupani",cta2:"Suʻe le ʻautau saʻo"},"to":{eyebrow:"Nuʻu Sila · ʻOku maʻu ʻe he Nuʻu Sila",h1:'Paʻanga ki Nuʻu Sila<br>mo hono <span class="em">kahaʻu.</span>',lede:"Ko e MJ Group ko ha kulupu ʻoku maʻu ʻe he kakai Nuʻu Sila, ʻoku paʻanga ki he ngaahi ʻapi, koloa fakapisinisi, moʻui leleí, tokoni, akó mo e fakafoʻou.",t1:"Maʻu ʻe Nuʻu Sila.",t2:"Paʻanga fakalotofonua.",t3:"Sio ki muʻa.",cta1:"Vakai ki heʻemau kautaha",cta2:"Kumi e timi totonu"},"ko":{eyebrow:"뉴질랜드 · 키위 소유",h1:'뉴질랜드와 그<br><span class="em">미래</span>에 투자합니다.',lede:"MJ Group은 주거, 상업용 부동산, 의료, 자산 서비스, 교육 및 미래 지향적 혁신에 투자하는 뉴질랜드 소유·운영 그룹입니다.",t1:"키위 소유.",t2:"현지 투자.",t3:"미래 지향.",cta1:"회사 둘러보기",cta2:"적합한 팀 찾기"},"vi":{eyebrow:"New Zealand · Người Kiwi sở hữu",h1:'Đầu tư vào New Zealand<br>và <span class="em">tương lai.</span>',lede:"MJ Group là tập đoàn do người New Zealand sở hữu và điều hành, đầu tư vào nhà ở, bất động sản thương mại, y tế, dịch vụ tài sản, giáo dục và đổi mới.",t1:"Người Kiwi sở hữu.",t2:"Đầu tư địa phương.",t3:"Hướng tới tương lai.",cta1:"Khám phá các công ty",cta2:"Tìm đúng đội ngũ"},"es":{eyebrow:"Nueva Zelanda · Propiedad kiwi",h1:'Invertir en Nueva Zelanda<br>y su <span class="em">futuro.</span>',lede:"MJ Group es un grupo de propiedad neozelandesa que invierte en vivienda, propiedad comercial, salud, servicios, educación e innovación.",t1:"Propiedad kiwi.",t2:"Inversión local.",t3:"Visión de futuro.",cta1:"Explorar nuestras empresas",cta2:"Encontrar el equipo"},"fr":{eyebrow:"Nouvelle-Zélande · Détenu par des Kiwis",h1:'Investir en Nouvelle-Zélande<br>et son <span class="em">avenir.</span>',lede:"MJ Group est un groupe néo-zélandais qui investit dans le logement, l'immobilier commercial, la santé, les services, l'éducation et l'innovation.",t1:"Détenu par des Kiwis.",t2:"Investissement local.",t3:"Tourné vers l'avenir.",cta1:"Découvrir nos sociétés",cta2:"Trouver la bonne équipe"},"de":{eyebrow:"Neuseeland · In kiwianischem Besitz",h1:'In Neuseeland und seine<br><span class="em">Zukunft</span> investieren.',lede:"MJ Group ist eine neuseeländische Gruppe, die in Wohn- und Gewerbeimmobilien, Gesundheit, Dienstleistungen, Bildung und Innovation investiert.",t1:"In NZ-Besitz.",t2:"Lokal investiert.",t3:"Zukunftsorientiert.",cta1:"Unsere Unternehmen",cta2:"Das richtige Team finden"},"ja":{eyebrow:"ニュージーランド · キウイ所有",h1:'ニュージーランドと<br>その<span class="em">未来</span>へ投資。',lede:"MJ Group はニュージーランド資本・運営のグループで、住宅、商業用不動産、医療、資産サービス、教育、未来志向のイノベーションに投資しています。",t1:"キウイ所有。",t2:"地域に投資。",t3:"未来志向。",cta1:"事業を見る",cta2:"最適なチームを探す"},"ar":{eyebrow:"نيوزيلندا · مملوكة محليًا",h1:'الاستثمار في نيوزيلندا<br>و<span class="em">مستقبلها.</span>',lede:"MJ Group مجموعة نيوزيلندية مملوكة ومُدارة محليًا، تستثمر في السكن والعقارات التجارية والرعاية الصحية والخدمات والتعليم والابتكار.",t1:"ملكية نيوزيلندية.",t2:"استثمار محلي.",t3:"نحو المستقبل.",cta1:"استكشف شركاتنا",cta2:"اعثر على الفريق"},"pt":{eyebrow:"Nova Zelândia · Propriedade kiwi",h1:'Investir na Nova Zelândia<br>e no seu <span class="em">futuro.</span>',lede:"A MJ Group é um grupo neozelandês que investe em habitação, imóveis comerciais, saúde, serviços, educação e inovação.",t1:"Propriedade kiwi.",t2:"Investimento local.",t3:"Focado no futuro.",cta1:"Explorar as empresas",cta2:"Encontrar a equipa"},"ru":{eyebrow:"Новая Зеландия · Местное владение",h1:'Инвестиции в Новую Зеландию<br>и её <span class="em">будущее.</span>',lede:"MJ Group — новозеландская группа, инвестирующая в жильё, коммерческую недвижимость, здравоохранение, услуги, образование и инновации.",t1:"Новозеландская.",t2:"Местные инвестиции.",t3:"Взгляд в будущее.",cta1:"Наши компании",cta2:"Найти команду"},"it":{eyebrow:"Nuova Zelanda · Proprietà kiwi",h1:'Investire in Nuova Zelanda<br>e nel suo <span class="em">futuro.</span>',lede:"MJ Group è un gruppo neozelandese che investe in residenziale, immobili commerciali, sanità, servizi, istruzione e innovazione.",t1:"Proprietà kiwi.",t2:"Investimento locale.",t3:"Orientato al futuro.",cta1:"Scopri le aziende",cta2:"Trova il team"},"tl":{eyebrow:"New Zealand · Pag-aari ng Kiwi",h1:'Pamumuhunan sa New Zealand<br>at sa <span class="em">kinabukasan.</span>',lede:"Ang MJ Group ay grupong pag-aari at pinapatakbo ng mga Kiwi, namumuhunan sa pabahay, komersyal na ari-arian, kalusugan, serbisyo, edukasyon at inobasyon.",t1:"Pag-aari ng Kiwi.",t2:"Lokal na puhunan.",t3:"Nakatuon sa hinaharap.",cta1:"Tuklasin ang mga kumpanya",cta2:"Hanapin ang tamang koponan"},"th":{eyebrow:"นิวซีแลนด์ · เจ้าของชาวกีวี",h1:'ลงทุนในนิวซีแลนด์<br>และ<span class="em">อนาคต</span>',lede:"MJ Group เป็นกลุ่มบริษัทที่ชาวนิวซีแลนด์เป็นเจ้าของและดำเนินการ ลงทุนในที่อยู่อาศัย อสังหาริมทรัพย์เชิงพาณิชย์ การดูแลสุขภาพ บริการ การศึกษา และนวัตกรรม",t1:"เจ้าของชาวกีวี",t2:"ลงทุนในท้องถิ่น",t3:"มุ่งสู่อนาคต",cta1:"สำรวจบริษัทของเรา",cta2:"ค้นหาทีมที่ใช่"},"id":{eyebrow:"Selandia Baru · Milik Kiwi",h1:'Berinvestasi di Selandia Baru<br>dan <span class="em">masa depannya.</span>',lede:"MJ Group adalah grup milik dan kelolaan Selandia Baru yang berinvestasi di hunian, properti komersial, kesehatan, layanan, pendidikan, dan inovasi.",t1:"Milik Kiwi.",t2:"Investasi lokal.",t3:"Berorientasi masa depan.",cta1:"Jelajahi perusahaan kami",cta2:"Temukan tim yang tepat"},"pa":{eyebrow:"ਨਿਊਜ਼ੀਲੈਂਡ · ਕੀਵੀ ਮਾਲਕੀ",h1:'ਨਿਊਜ਼ੀਲੈਂਡ ਅਤੇ ਇਸਦੇ<br><span class="em">ਭਵਿੱਖ</span> ਵਿੱਚ ਨਿਵੇਸ਼।',lede:"MJ Group ਇੱਕ ਕੀਵੀ-ਮਾਲਕੀ ਵਾਲਾ ਸਮੂਹ ਹੈ ਜੋ ਰਿਹਾਇਸ਼, ਵਪਾਰਕ ਜਾਇਦਾਦ, ਸਿਹਤ, ਸੇਵਾਵਾਂ, ਸਿੱਖਿਆ ਅਤੇ ਨਵੀਨਤਾ ਵਿੱਚ ਨਿਵੇਸ਼ ਕਰਦਾ ਹੈ।",t1:"ਕੀਵੀ ਮਾਲਕੀ।",t2:"ਸਥਾਨਕ ਨਿਵੇਸ਼।",t3:"ਭਵਿੱਖ ਵੱਲ।",cta1:"ਸਾਡੀਆਂ ਕੰਪਨੀਆਂ ਵੇਖੋ",cta2:"ਸਹੀ ਟੀਮ ਲੱਭੋ"}};
+  var EN_SNAP={};document.querySelectorAll("[data-i18n]").forEach(function(el){EN_SNAP[el.getAttribute("data-i18n")]=el.innerHTML;});
+  var langWrap=document.getElementById("lang"),langBtn=document.getElementById("langBtn"),langGrid=document.getElementById("langGrid"),langLbl=document.getElementById("langLbl"),langNote=document.getElementById("langNote");
+  LANGS.forEach(function(l){var b=document.createElement("button");b.className="lang-opt";b.type="button";b.dataset.code=l.code;b.innerHTML='<span class="nm">'+l.nm+'</span><span class="en">'+l.en+'</span>';b.addEventListener("click",function(){selectLang(l);});langGrid.appendChild(b);});
+  function setActive(c){langGrid.querySelectorAll(".lang-opt").forEach(function(o){o.classList.toggle("active",o.dataset.code===c);});}
+  function combo(){return document.querySelector(".goog-te-combo");}
+  function applyGoogle(c){var k=combo();if(k){k.value=c;k.dispatchEvent(new Event("change"));return true;}return false;}
+  function applyFallback(c){var d=(c==="en")?null:I18N[c];document.querySelectorAll("[data-i18n]").forEach(function(el){var k=el.getAttribute("data-i18n");el.innerHTML=(d&&d[k])?d[k]:EN_SNAP[k];});htmlEl.setAttribute("dir",(c==="ar")?"rtl":"ltr");}
+  function selectLang(l){langLbl.textContent=(l.en==="English")?"English":l.nm;setActive(l.code);closeP();var ok=applyGoogle(l.code);if(!ok){var n=0,iv=setInterval(function(){if(applyGoogle(l.code)||++n>16)clearInterval(iv);},180);}applyFallback(l.code);try{document.cookie="googtrans=/en/"+l.code+";path=/";}catch(e){}}
+  function openP(){langWrap.classList.add("open");langBtn.setAttribute("aria-expanded","true");langNote.textContent=window.__gtFailed?"Full-page translation activates on the live mjgroup.nz domain.":"Whole-page translation, powered by Google.";}
+  function closeP(){langWrap.classList.remove("open");langBtn.setAttribute("aria-expanded","false");}
+  langBtn.addEventListener("click",function(e){e.stopPropagation();langWrap.classList.contains("open")?closeP():openP();});
+  document.addEventListener("click",function(e){if(!langWrap.contains(e.target))closeP();});
+  document.addEventListener("keydown",function(e){if(e.key==="Escape")closeP();});
+  setActive("en");
+
+  /* REVEAL */
+  var rev=document.querySelectorAll(".reveal");
+  if(reduce||!("IntersectionObserver" in window)){rev.forEach(function(el){el.classList.add("in");});}
+  else{var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target);}});},{threshold:.12,rootMargin:"0px 0px -8% 0px"});rev.forEach(function(el){io.observe(el);});}
+
+  /* ANCHORS */
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener("click",function(ev){var id=a.getAttribute("href");if(id.length<2)return;var t=document.querySelector(id);if(!t)return;ev.preventDefault();window.scrollTo({top:t.getBoundingClientRect().top+window.scrollY-60,behavior:reduce?"auto":"smooth"});});});
+
+  /* FORM */
+  document.getElementById("enquiryForm").addEventListener("submit",function(e){e.preventDefault();var g=function(id){return (document.getElementById(id).value||"").trim();};var co=document.getElementById("f-company").value;var body="Name: "+g("f-name")+"\nEmail: "+g("f-email")+"\nRegarding: "+co+"\n\n"+g("f-message")+"\n";window.location.href="mailto:enquiries@mjgroup.nz?subject="+encodeURIComponent("MJ Group enquiry — "+co)+"&body="+encodeURIComponent(body);});
+})();
+</script>
+</body>
+</html>
